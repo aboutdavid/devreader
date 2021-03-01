@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Meta tags -->
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"
+      name="viewport"
+    />
+    <meta name="viewport" content="width=device-width" />
+
+    <!-- Favicon and title -->
+    <title>DevReader</title>
+  </head>
+  <body
+    class="with-custom-webkit-scrollbars with-custom-css-scrollbars with-transitions dark-mode"
+    data-dm-shortcut-enabled="true"
+    data-sidebar-shortcut-enabled="true"
+    data-set-preferred-mode-onload="true"
+  >
+    <!-- Modals go here -->
+    <!-- Reference: https://www.gethalfmoon.com/docs/modal -->
+
+    <!-- Page wrapper start -->
+    <div class="page-wrapper with-navbar with-sidebar" data-sidebar-hidden="hidden">
+      <!-- Sticky alerts (toasts), empty container -->
+      <!-- Reference: https://www.gethalfmoon.com/docs/sticky-alerts-toasts -->
+      <div class="sticky-alerts"></div>
+
+      <!-- Navbar start -->
+      <nav class="navbar">
+        <button
+          id="toggle-sidebar-btn"
+          class="btn btn-action"
+          type="button"
+          onclick="halfmoon.toggleSidebar()"
+        >
+          <i class="fa fa-bars" aria-hidden="true"></i>
+        </button>
+        <a href="/" class="navbar-brand">
+          <img alt="Icon" id="navbar-icon" />
+          DevReader
+        </a>
+        <div class="navbar-content ml-auto">
+          <button
+            class="btn btn-primary"
+            type="button"
+            onclick="halfmoon.toggleDarkMode()"
+          >
+            🌙
+          </button>
+        </div>
+      </nav>
+      <!-- Navbar end -->
+
+      <!-- Sidebar start -->
+      <div class="sidebar">
+        <h5 class="sidebar-title">Main</h5>
+        <div class="sidebar-divider"></div>
+        <a href="/" class="sidebar-link" id="home-nav">Home</a>
+        <h5 class="sidebar-title">Blogs</h5>
+        <div class="sidebar-divider"></div>
+        <div class="blog-list">
+          
+        </div>
+      </div>
+      <!-- Sidebar end -->
+
+      <!-- Content wrapper start -->
+      <div class="content-wrapper" style="padding:1%;word-wrap:break-word;">
+        <h1 class="content-title font-size-22">
+          DevReader
+        </h1>
+        <p>
+          The RSS reader built for devs using HalfmoonCSS for the UI, webpack
+          for the static webpages, and express.js as the backend.
+        </p>
+        <p>
+         On the sidebar, you can view your feeds. This is a public instance which gives you some feeds by default. There is a light mode toggle because it uses dark mode by default. Feeds update every 10 minutes and it is hosted on Glitch!
+        </p>
+        <p>
+          It's also mobile friendly :)
+        </p>
+        <p>
+          Tips:
+        </p>
+        Press <kbd>shift</kbd> + <kbd>f</kbd> to toggle the sidebar
+      </div>
+      <!-- Content wrapper end -->
+    </div>
+    <!-- Page wrapper end -->
+
+    <!-- Halfmoon JS -->
+  </body>
+</html>

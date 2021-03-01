@@ -1,0 +1,16 @@
+.content-wrapper img {
+  max-width: 100%;
+  height: auto;
+}
+.content-wrapper video {
+  max-width: 100%;
+  height: auto;
+}
+
+code {
+  overflow: scroll;
+}
+.content-wrapper {
+  padding: 5px;
+  word-wrap: break-word;
+}

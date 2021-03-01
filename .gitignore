@@ -1,0 +1,3 @@
+*.sqlite
+static
+.sqlite_history
